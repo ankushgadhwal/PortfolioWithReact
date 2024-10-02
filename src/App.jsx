@@ -1,7 +1,7 @@
 import "./App.css";
-import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import MainCtn from "./components/MainCtn.jsx";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <div className="container py-8">
           <div className="container-inner d-xl-flex">
             <Sidebar />
-            <Main />
+            <MainCtn />
           </div>
         </div>
       </main>

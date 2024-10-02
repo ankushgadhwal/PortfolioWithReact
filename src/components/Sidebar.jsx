@@ -6,6 +6,7 @@ import {
   GeoAlt,
   Phone,
 } from "react-bootstrap-icons";
+import profileImg from "../assets/avatar.png";
 
 const Sidebar = () => {
   return (
@@ -14,7 +15,7 @@ const Sidebar = () => {
         <div className="sidebar">
           <div className="sidebar-basic-info d-flex d-xl-block align-items-center">
             <div className="avatar-box">
-              <img src="img/avatar.png" alt="avatar" />
+              <img src={profileImg} alt="avatar" />
             </div>
 
             <div className="sidebar-basic-info-details text-xl-center">
@@ -35,7 +36,7 @@ const Sidebar = () => {
               <ul className="d-md-flex d-xl-block">
                 <li>
                   <div className="details-info-item d-flex align-items-center">
-                    <span className="info-icon">
+                    <span className="info-icon d-flex align-items-center justify-content-center">
                       <Envelope color="#FFDB6E" />
                     </span>
                     <div className="item-details">
@@ -46,7 +47,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                   <div className="details-info-item d-flex align-items-center">
-                    <span className="info-icon">
+                    <span className="info-icon d-flex align-items-center justify-content-center">
                       <Phone color="#FFDB6E" />
                     </span>
                     <div className="item-details">
@@ -57,7 +58,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                   <div className="details-info-item d-flex align-items-center">
-                    <span className="info-icon">
+                    <span className="info-icon d-flex align-items-center justify-content-center">
                       <Calendar4Range color="#FFDB6E" />
                     </span>
                     <div className="item-details">
@@ -68,7 +69,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                   <div className="details-info-item d-flex align-items-center">
-                    <span className="info-icon">
+                    <span className="info-icon d-flex align-items-center justify-content-center">
                       <GeoAlt color="#FFDB6E" />
                     </span>
                     <div className="item-details">
