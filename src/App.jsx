@@ -1,19 +1,29 @@
 import "./App.css";
-import Sidebar from "./components/Sidebar";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import MainCtn from "./components/MainCtn.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./Pages/About.jsx";
+import RootLayout from "./Root.jsx";
+import Resume from "./Pages/Resume.jsx";
+import Portfolio from "./Pages/Portfolio.jsx";
+import Contact from "./Pages/Contact.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <About /> },
+      { path: "/resume", element: <Resume /> },
+      { path: "/portfolio", element: <Portfolio /> },
+      { path: "/contact", element: <Contact /> },
+    ],
+  },
+]);
 
 function App() {
   return (
     <>
-      <main className="main">
-        <div className="container py-8">
-          <div className="container-inner d-xl-flex">
-            <Sidebar />
-            <MainCtn />
-          </div>
-        </div>
-      </main>
+      <RouterProvider router={router} />
     </>
   );
 }

@@ -1,56 +1,55 @@
 function Portfolio() {
   return (
-    <div className="col-xl-9 col-lg-12">
-      <div className="box-outer">
-        <div className="page-heading">
-          <h3 className="title">Portfolio</h3>
+    <>
+      <div className="page-heading">
+        <h3 className="title">Portfolio</h3>
+      </div>
+
+      <div className="portfolio-content">
+        <select
+          id="allproject"
+          className="form-select"
+          aria-label="Default select example"
+        >
+          <option selected>Select Category</option>
+
+          <option value="sass">SASS</option>
+          <option value="css">CSS/CSS3</option>
+          <option value="bootstrap">BOOTSTRAP</option>
+          <option value="media">Media Query</option>
+        </select>
+
+        <input type="radio" name="photos" id="check1" />
+        <input type="radio" name="photos" id="check2" />
+        <input type="radio" name="photos" id="check3" />
+        <input type="radio" name="photos" id="check4" />
+        <input type="radio" name="photos" id="check5" />
+        <input type="radio" name="photos" id="check6" />
+        <input type="radio" name="photos" id="check7" />
+
+        <div className="categories">
+          <label htmlFor="check1" className="yellowtext">
+            All
+          </label>
+          <label htmlFor="check6">Fullstack</label>
+          <label htmlFor="check7">Javascript</label>
+          <label htmlFor="check2">SASS</label>
+          <label htmlFor="check3">CSS/CSS3</label>
+          <label htmlFor="check4">BOOTSTRAP</label>
+          <label htmlFor="check5">Media Query</label>
         </div>
 
-        <div className="portfolio-content">
-          <select
-            id="allproject"
-            className="form-select"
-            aria-label="Default select example"
-          >
-            <option selected>Select Category</option>
-
-            <option value="sass">SASS</option>
-            <option value="css">CSS/CSS3</option>
-            <option value="bootstrap">BOOTSTRAP</option>
-            <option value="media">Media Query</option>
-          </select>
-
-          <input type="radio" name="photos" id="check1" />
-          <input type="radio" name="photos" id="check2" />
-          <input type="radio" name="photos" id="check3" />
-          <input type="radio" name="photos" id="check4" />
-          <input type="radio" name="photos" id="check5" />
-          <input type="radio" name="photos" id="check6" />
-          <input type="radio" name="photos" id="check7" />
-
-          <div className="categories">
-            <label htmlFor="check1" className="yellowtext">
-              All
-            </label>
-            <label htmlFor="check6">Fullstack</label>
-            <label htmlFor="check7">Javascript</label>
-            <label htmlFor="check2">SASS</label>
-            <label htmlFor="check3">CSS/CSS3</label>
-            <label htmlFor="check4">BOOTSTRAP</label>
-            <label htmlFor="check5">Media Query</label>
-          </div>
-
-          <div className="photo-gallery">
-            <div className="pic fullstack">
-              <a href="https://wanderlust-1j0e.onrender.com/listings">
-                <img src="img/wonderlust.PNG" alt="" />
-              </a>
-              <div className="img-caption">
-                <h3>Wonderlust</h3>
-                <p>Web Design</p>
-              </div>
+        <div className="photo-gallery">
+          <div className="pic fullstack">
+            <a href="https://wanderlust-1j0e.onrender.com/listings">
+              <img src="img/wonderlust.PNG" alt="" />
+            </a>
+            <div className="img-caption">
+              <h3>Wonderlust</h3>
+              <p>Web Design</p>
             </div>
-            {/* <div className="pic javascript">
+          </div>
+          {/* <div className="pic javascript">
                 <a href="https://forkify-ankush.netlify.app/">
                   <img src="img/javascript.jpg" alt="" />
                 </a>
@@ -125,10 +124,9 @@ function Portfolio() {
                   <p>Web Design</p>
                 </div>
               </div> */}
-          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,13 +1,41 @@
+import AboutDoCard from "../components/AboutDoCard";
+
+let myarr = [
+  {
+    img: "img/web-design.svg",
+    title: "Web Design",
+    description:
+      "The most modern and high-quality design made at a professional level.",
+  },
+  {
+    img: "img/web-dev.svg",
+    title: "Web Development",
+    description: "High-quality development of sites at the professional level.",
+  },
+  {
+    img: "img/mobile-app.svg",
+    title: "MERN Stack",
+    description:
+      "The most modern and high-quality design made at a professional level.",
+  },
+  {
+    img: "img/photo.svg",
+    title: "Full Stack",
+    description: "I make full stack project at a professional level.",
+  },
+];
+
 function About() {
   return (
-    <div className="col-xl-9 col-lg-12">
+    <>
       <div className="page-heading">
         <h1 className="title">About Me</h1>
         <p>
           I am a front-end developer with 2+ years of experience. I have
-          completed a web development course from "Red and White Multimedia
-          Education", "Udemy" and "Apna College" which has given me the latest
-          skills and knowledge in the web development industry.
+          completed a web development course from &quot;Red and White Multimedia
+          Education&quot;, &quot;Udemy&quot; and &quot;Apna College&quot; which
+          has given me the latest skills and knowledge in the web development
+          industry.
         </p>
 
         <p>
@@ -35,61 +63,12 @@ function About() {
       </div>
 
       <div className="about-content">
-        <h2>What I'm Doing</h2>
+        <h2>What I&apos;m Doing</h2>
 
         <div className="about-item row">
-          <div className="col-sm-12 col-lg-6">
-            <div className="item-inner d-flex">
-              <div className="inner-img me-3">
-                <img src="img/web-design.svg" alt="" />
-              </div>
-              <div className="inner-content">
-                <h3>Web Design</h3>
-                <p>
-                  The most modern and high-quality design made at a professional
-                  level.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-lg-6">
-            <div className="item-inner d-flex">
-              <div className="inner-img me-3">
-                <img src="img/web-dev.svg" alt="" />
-              </div>
-              <div className="inner-content">
-                <h3>Web Development</h3>
-                <p>
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-lg-6">
-            <div className="item-inner d-flex">
-              <div className="inner-img me-3">
-                <img src="img/mobile-app.svg" alt="" />
-              </div>
-              <div className="inner-content">
-                <h3>MERN Stack</h3>
-                <p>
-                  The most modern and high-quality design made at a professional
-                  level.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-lg-6">
-            <div className="item-inner d-flex">
-              <div className="inner-img me-3">
-                <img src="img/photo.svg" alt="" />
-              </div>
-              <div className="inner-content">
-                <h3>Full Stack</h3>
-                <p>I make full stack project at a professional level.</p>
-              </div>
-            </div>
-          </div>
+          {myarr?.map((card, idx) => (
+            <AboutDoCard card={card} key={idx} />
+          ))}
         </div>
       </div>
 
@@ -97,90 +76,97 @@ function About() {
         <h3 className="heading">Testimonials</h3>
         <div className="testimonial-item">
           <div className="owl-carousel owl-theme testimonial-carousel">
-            <div className="item">
-              <div className="item-inner">
-                <div className="inner-details me-3">
-                  <div className="inner-img">
-                    <img src="img/avatar-1.png" alt="" />
+            {/* <Carousel
+              emulateTouch={true}
+              infiniteLoop={true}
+              showArrows={false}
+              showStatus={false}
+            >
+              <div className="item">
+                <div className="item-inner">
+                  <div className="inner-details me-3">
+                    <div className="inner-img">
+                      <img src="img/avatar-1.png" alt="" />
+                    </div>
+                    <h3>Daniel Lewis</h3>
                   </div>
-                  <h3>Daniel Lewis</h3>
-                </div>
-                <div className="inner-content">
-                  <p>
-                    Ricardo was hired to create a corporate identity. We were
-                    very pleased with the work done...
-                  </p>
+                  <div className="inner-content">
+                    <p>
+                      Ricardo was hired to create a corporate identity. We were
+                      very pleased with the work done...
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="item">
-              <div className="item-inner">
-                <div className="inner-details me-3">
-                  <div className="inner-img">
-                    <img src="img/avatar-2.png" alt="" />
+              <div className="item">
+                <div className="item-inner">
+                  <div className="inner-details me-3">
+                    <div className="inner-img">
+                      <img src="img/avatar-2.png" alt="" />
+                    </div>
+                    <h3>Jessica Miller</h3>
                   </div>
-                  <h3>Jessica Miller</h3>
-                </div>
-                <div className="inner-content">
-                  <p>
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
+                  <div className="inner-content">
+                    <p>
+                      The most modern and high-quality design made at a
+                      professional level.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="item">
-              <div className="item-inner">
-                <div className="inner-details me-3">
-                  <div className="inner-img">
-                    <img src="img/avatar-3.png" alt="" />
+              <div className="item">
+                <div className="item-inner">
+                  <div className="inner-details me-3">
+                    <div className="inner-img">
+                      <img src="img/avatar-3.png" alt="" />
+                    </div>
+                    <h3>Emily Evans</h3>
                   </div>
-                  <h3>Emily Evans</h3>
-                </div>
-                <div className="inner-content">
-                  <p>
-                    Ricardo did a miracle with my website. It looks exactly as I
-                    imagined it. Now I have a profession...
-                  </p>
+                  <div className="inner-content">
+                    <p>
+                      Ricardo did a miracle with my website. It looks exactly as
+                      I imagined it. Now I have a profession...
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="item">
-              <div className="item-inner">
-                <div className="inner-details me-3">
-                  <div className="inner-img">
-                    <img src="img/avatar-4.png" alt="" />
+              <div className="item">
+                <div className="item-inner">
+                  <div className="inner-details me-3">
+                    <div className="inner-img">
+                      <img src="img/avatar-4.png" alt="" />
+                    </div>
+                    <h3>Henry William</h3>
                   </div>
-                  <h3>Henry William</h3>
-                </div>
-                <div className="inner-content">
-                  <p>
-                    Thank you very much for your work on our project. It was a
-                    big help for us. Thanks to the...
-                  </p>
+                  <div className="inner-content">
+                    <p>
+                      Thank you very much for your work on our project. It was a
+                      big help for us. Thanks to the...
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="item">
-              <div className="item-inner">
-                <div className="inner-details me-3">
-                  <div className="inner-img">
-                    <img src="img/avatar-4.png" alt="" />
+              <div className="item">
+                <div className="item-inner">
+                  <div className="inner-details me-3">
+                    <div className="inner-img">
+                      <img src="img/avatar-4.png" alt="" />
+                    </div>
+                    <h3>Henry William</h3>
                   </div>
-                  <h3>Henry William</h3>
-                </div>
-                <div className="inner-content">
-                  <p>
-                    Thank you very much for your work on our project. It was a
-                    big help for us. Thanks to the...
-                  </p>
+                  <div className="inner-content">
+                    <p>
+                      Thank you very much for your work on our project. It was a
+                      big help for us. Thanks to the...
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Carousel> */}
           </div>
         </div>
       </div>
@@ -227,7 +213,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
