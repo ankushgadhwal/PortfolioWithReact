@@ -1,3 +1,5 @@
+import { Book, Briefcase } from "react-bootstrap-icons";
+
 function Resume() {
   return (
     <>
@@ -6,8 +8,8 @@ function Resume() {
       </div>
 
       <div className="education">
-        <span className="book-icon d-inline-block">
-          <i className="bi bi-book"></i>
+        <span className="book-icon">
+          <Book color="#FFDB6E" />
         </span>
         <h3 className="d-inline">Certificates</h3>
       </div>
@@ -93,8 +95,8 @@ function Resume() {
       </div>
 
       <div className="education">
-        <span className="book-icon d-inline-block">
-          <i className="bi bi-book"></i>
+        <span className="book-icon">
+          <Book color="#FFDB6E" />
         </span>
         <h3 className="d-inline">Education</h3>
       </div>
@@ -111,8 +113,8 @@ function Resume() {
       </div>
 
       <div className="education">
-        <span className="book-icon d-inline-block">
-          <i className="bi bi-briefcase"></i>
+        <span className="book-icon">
+          <Briefcase color="#FFDB6E" />
         </span>
         <h3 className="d-inline">Experience</h3>
       </div>

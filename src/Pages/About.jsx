@@ -1,25 +1,43 @@
 import AboutDoCard from "../components/AboutDoCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import logo_1 from "../assets/logo-1-color.png";
+import logo_2 from "../assets/logo-2-color.png";
+import logo_3 from "../assets/logo-3-color.png";
+import logo_4 from "../assets/logo-4-color.png";
+import logo_5 from "../assets/logo-5-color.png";
+import logo_6 from "../assets/logo-6-color.png";
+import avatar_1 from "../assets/avatar-1.png";
+import avatar_2 from "../assets/avatar-2.png";
+import avatar_3 from "../assets/avatar-3.png";
+import avatar_4 from "../assets/avatar-4.png";
+import web_design from "../assets/web-design.svg";
+import web_development from "../assets/web-dev.svg";
+import mobile_app from "../assets/mobile-app.svg";
+import full_stack from "../assets/photo.svg";
 
 let myarr = [
   {
-    img: "img/web-design.svg",
+    img: web_design,
     title: "Web Design",
     description:
       "The most modern and high-quality design made at a professional level.",
   },
   {
-    img: "img/web-dev.svg",
+    img: web_development,
     title: "Web Development",
     description: "High-quality development of sites at the professional level.",
   },
   {
-    img: "img/mobile-app.svg",
+    img: mobile_app,
     title: "MERN Stack",
     description:
       "The most modern and high-quality design made at a professional level.",
   },
   {
-    img: "img/photo.svg",
+    img: full_stack,
     title: "Full Stack",
     description: "I make full stack project at a professional level.",
   },
@@ -61,7 +79,6 @@ function About() {
           the most creative way.
         </p>
       </div>
-
       <div className="about-content">
         <h2>What I&apos;m Doing</h2>
 
@@ -71,145 +88,171 @@ function About() {
           ))}
         </div>
       </div>
-
       <div className="about-testimonial">
         <h3 className="heading">Testimonials</h3>
         <div className="testimonial-item">
           <div className="owl-carousel owl-theme testimonial-carousel">
-            {/* <Carousel
-              emulateTouch={true}
-              infiniteLoop={true}
-              showArrows={false}
-              showStatus={false}
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+                className: "owl-dots",
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
             >
-              <div className="item">
-                <div className="item-inner">
-                  <div className="inner-details me-3">
-                    <div className="inner-img">
-                      <img src="img/avatar-1.png" alt="" />
+              <SwiperSlide>
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="inner-details me-3">
+                      <div className="inner-img">
+                        <img src={avatar_1} alt="" />
+                      </div>
+                      <h3>Daniel Lewis</h3>
                     </div>
-                    <h3>Daniel Lewis</h3>
-                  </div>
-                  <div className="inner-content">
-                    <p>
-                      Ricardo was hired to create a corporate identity. We were
-                      very pleased with the work done...
-                    </p>
+                    <div className="inner-content">
+                      <p>
+                        Ricardo was hired to create a corporate identity. We
+                        were very pleased with the work done...
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="item">
-                <div className="item-inner">
-                  <div className="inner-details me-3">
-                    <div className="inner-img">
-                      <img src="img/avatar-2.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="inner-details me-3">
+                      <div className="inner-img">
+                        <img src={avatar_2} alt="" />
+                      </div>
+                      <h3>Jessica Miller</h3>
                     </div>
-                    <h3>Jessica Miller</h3>
-                  </div>
-                  <div className="inner-content">
-                    <p>
-                      The most modern and high-quality design made at a
-                      professional level.
-                    </p>
+                    <div className="inner-content">
+                      <p>
+                        The most modern and high-quality design made at a
+                        professional level.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="item">
-                <div className="item-inner">
-                  <div className="inner-details me-3">
-                    <div className="inner-img">
-                      <img src="img/avatar-3.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="inner-details me-3">
+                      <div className="inner-img">
+                        <img src={avatar_3} alt="" />
+                      </div>
+                      <h3>Emily Evans</h3>
                     </div>
-                    <h3>Emily Evans</h3>
-                  </div>
-                  <div className="inner-content">
-                    <p>
-                      Ricardo did a miracle with my website. It looks exactly as
-                      I imagined it. Now I have a profession...
-                    </p>
+                    <div className="inner-content">
+                      <p>
+                        Ricardo did a miracle with my website. It looks exactly
+                        as I imagined it. Now I have a profession...
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="item">
-                <div className="item-inner">
-                  <div className="inner-details me-3">
-                    <div className="inner-img">
-                      <img src="img/avatar-4.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="inner-details me-3">
+                      <div className="inner-img">
+                        <img src={avatar_4} alt="" />
+                      </div>
+                      <h3>Henry William</h3>
                     </div>
-                    <h3>Henry William</h3>
-                  </div>
-                  <div className="inner-content">
-                    <p>
-                      Thank you very much for your work on our project. It was a
-                      big help for us. Thanks to the...
-                    </p>
+                    <div className="inner-content">
+                      <p>
+                        Thank you very much for your work on our project. It was
+                        a big help for us. Thanks to the...
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="item">
-                <div className="item-inner">
-                  <div className="inner-details me-3">
-                    <div className="inner-img">
-                      <img src="img/avatar-4.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <div className="item-inner">
+                    <div className="inner-details me-3">
+                      <div className="inner-img">
+                        <img src={avatar_2} alt="" />
+                      </div>
+                      <h3>Henry William</h3>
                     </div>
-                    <h3>Henry William</h3>
-                  </div>
-                  <div className="inner-content">
-                    <p>
-                      Thank you very much for your work on our project. It was a
-                      big help for us. Thanks to the...
-                    </p>
+                    <div className="inner-content">
+                      <p>
+                        Thank you very much for your work on our project. It was
+                        a big help for us. Thanks to the...
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Carousel> */}
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
-
       <div className="client">
         <h3 className="heading">Client</h3>
         <div className="client-item">
           <div className="owl-carousel owl-theme client-carousel">
-            <div className="item">
-              <a href="#">
-                <img src="img/logo-1-color.png" alt="" width="100%" />
-              </a>
-            </div>
-
-            <div className="item">
-              <a href="#">
-                <img src="img/logo-2-color.png" alt="" />
-              </a>
-            </div>
-
-            <div className="item">
-              <a href="#">
-                <img src="img/logo-3-color.png" alt="" />
-              </a>
-            </div>
-
-            <div className="item">
-              <a href="#">
-                <img src="img/logo-4-color.png" alt="" />
-              </a>
-            </div>
-
-            <div className="item">
-              <a href="#">
-                <img src="img/logo-5-color.png" alt="" />
-              </a>
-            </div>
-
-            <div className="item">
-              <a href="#">
-                <img src="img/logo-6-color.png" alt="" />
-              </a>
-            </div>
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+                className: "owl-dots",
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="item">
+                  <a href="#">
+                    <img src={logo_1} alt="" width="100%" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <a href="#">
+                    <img src={logo_2} alt="" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <a href="#">
+                    <img src={logo_3} alt="" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <a href="#">
+                    <img src={logo_4} alt="" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <a href="#">
+                    <img src={logo_5} alt="" />
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="item">
+                  <a href="#">
+                    <img src={logo_6} alt="" />
+                  </a>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
