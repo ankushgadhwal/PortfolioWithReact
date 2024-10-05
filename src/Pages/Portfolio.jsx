@@ -1,4 +1,15 @@
+import fullstackImg from "../assets/wonderlust.jpg";
+import javascriptImg from "../assets/javascript.jpg";
+import seoImg from "../assets/seo.png";
+import pofoImg from "../assets/poco-responsive.png";
+import canvasImg from "../assets/canvas.jpg";
+import portfolioImg from "../assets/portfolio-project.jpg";
+import portfolioImg2 from "../assets/portfolio.jpg";
+import sandboxImg from "../assets/sandbox-css3.jpg";
+import titanaImg from "../assets/sass- project.png";
+
 function Portfolio() {
+  
   return (
     <>
       <div className="page-heading">
@@ -42,88 +53,101 @@ function Portfolio() {
         <div className="photo-gallery">
           <div className="pic fullstack">
             <a href="https://wanderlust-1j0e.onrender.com/listings">
-              <img src="img/wonderlust.PNG" alt="" />
+              <img src={fullstackImg} alt="wonderLust" />
             </a>
             <div className="img-caption">
               <h3>Wonderlust</h3>
               <p>Web Design</p>
             </div>
           </div>
-          {/* <div className="pic javascript">
-                <a href="https://forkify-ankush.netlify.app/">
-                  <img src="img/javascript.jpg" alt="" />
-                </a>
-                <div className="img-caption">
-                  <h3>Forkify</h3>
-                  <p>Web Design</p>
-                </div>
-              </div>
-              <div className="pic sass">
-                <a href="https://titana.pages.dev/">
-                  <img src="img/sass- project.png" alt="" />
-                </a>
-                <div className="img-caption">
-                  <h3>Titana</h3>
-                  <p>Web Design</p>
-                </div>
-              </div>
-              <div className="pic bootstrap">
-                <a href="https://seobyankush.netlify.app/">
-                  <img src="img/bootstrap-project.png" alt="" />
-                </a>
-                <div className="img-caption">
-                  <h3>SEO / Digital Marketing</h3>
-                  <p>Web Design</p>
-                </div>
-              </div>
-              <div className="pic pofo">
-                <a href="https://pofo-by-ankush.000webhostapp.com/">
-                  <img
-                    src="img/pofo.webp"
-                    alt=""
-                    style="object-position: top"
-                  />
-                </a>
-                <div className="img-caption">
-                  <h3>POFO</h3>
-                  <p>Web Design</p>
-                </div>
-              </div>
-              <div className="pic sandbox">
-                <a href="https://sandbox-by-ankush.pages.dev/">
-                  <img
-                    src="img/sandbox2.jpg"
-                    alt=""
-                    style="object-position: top"
-                  />
-                </a>
-                <div className="img-caption">
-                  <h3>Sandbox</h3>
-                  <p>Web Design</p>
-                </div>
-              </div>
-              <div className="pic canvas">
-                <a href="https://canvas-car.netlify.app/">
-                  <img src="img/canvas.jpg" alt="" />
-                </a>
-                <div className="img-caption">
-                  <h3>Canvas</h3>
-                  <p>Web Design</p>
-                </div>
-              </div>
-              <div className="pic portfolio">
-                <a href="index.html">
-                  <img
-                    src="img/portfolio.avif"
-                    alt=""
-                    style="object-position: right"
-                  />
-                </a>
-                <div className="img-caption">
-                  <h3>Portfolio</h3>
-                  <p>Web Design</p>
-                </div>
-              </div> */}
+          <div className="pic javascript">
+            <a href="https://forkify-ankush.netlify.app/">
+              <img src={javascriptImg} alt="javascript" />
+            </a>
+            <div className="img-caption">
+              <h3>Forkify</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic sass">
+            <a href="https://titana.pages.dev/">
+              <img src={titanaImg} alt="Titana" />
+            </a>
+            <div className="img-caption">
+              <h3>Titana</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic bootstrap">
+            <a href="https://seobyankush.netlify.app/">
+              <img src={seoImg} alt="seo" />
+            </a>
+            <div className="img-caption">
+              <h3>SEO / Digital Marketing</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic pofo">
+            <a href="https://pofo-by-ankush.000webhostapp.com/">
+              <img
+                src={pofoImg}
+                alt="pofo"
+                style={{ objectPosition: "top" }}
+              />
+            </a>
+            <div className="img-caption">
+              <h3>POFO</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic sandbox">
+            <a href="https://sandbox-by-ankush.pages.dev/">
+              <img
+                src={sandboxImg}
+                alt="sandbox"
+                style={{ objectPosition: "top" }}
+              />
+            </a>
+            <div className="img-caption">
+              <h3>Sandbox</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic canvas">
+            <a href="https://canvas-car.netlify.app/">
+              <img src={canvasImg} alt="" />
+            </a>
+            <div className="img-caption">
+              <h3>Canvas</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic portfolio">
+            <a href="index.html">
+              <img
+                src={portfolioImg}
+                alt="html"
+                style={{ objectPosition: "right" }}
+              />
+            </a>
+            <div className="img-caption">
+              <h3>Portfolio</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div className="pic portfolio">
+            <a href="index.html">
+              <img
+                src={portfolioImg2}
+                alt="react"
+                style={{ objectPosition: "right" }}
+              />
+            </a>
+            <div className="img-caption">
+              <h3>Portfolio</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

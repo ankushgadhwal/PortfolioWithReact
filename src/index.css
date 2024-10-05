@@ -5,7 +5,7 @@ a{text-decoration:none;display:inline-block}
 ::selection{color:#ffdb6e}
 .active{display:inline-block!important}
 .yellowtext{color:#ffbc5e!important}
-body{background-color:#121212!important;color:#fff!important;font-family:Poppins,sans-serif!important}
+body{background:linear-gradient(117deg,rgba(252,166,45,1) 0,rgba(214,105,132,1) 14%,rgba(162,95,163,1) 25%,rgba(79,89,220,1) 63%,rgba(214,105,132,1) 80%,rgba(252,166,45,1) 100%);color:#fff!important;font-family:Poppins,sans-serif!important}
 .main aside{padding:30px;background-color:#1e1e1f;border-radius:20px;border:1px solid rgba(153,153,153,.253);box-shadow:5px 5px 10px rgba(0,0,0,.4);position:sticky;top:50px;margin-bottom:30px}
 .main aside .sidebar-basic-info .avatar-box{background-color:#363535;border-radius:30px}
 .main aside .sidebar-basic-info .sidebar-basic-info-details h3{font-size:25px;margin-bottom:16px;font-weight:500}
@@ -43,8 +43,7 @@ body{background-color:#121212!important;color:#fff!important;font-family:Poppins
 .main .box-outer .about-testimonial .testimonial-item .item-inner .inner-img img{width:100%;height:100%;margin:auto auto}
 .main .box-outer .about-testimonial .testimonial-item .item-inner h3{font-size:18px;font-weight:600;margin-bottom:8px;margin-left:100px;color:#fcfcfc;display:inline-block}
 .main .box-outer .about-testimonial .testimonial-item .item-inner .inner-content p{margin-bottom:0;color:#fcfcfc;opacity:.7;font-weight:300;font-size:14px}
-.testimonial-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active,
-.client-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active{width:20px;background:linear-gradient(137.84deg,#ffdb6e 26.31%,#ffbc5e 93.75%);transition:all .2s linear;border-radius:7px}
+.client-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active,.testimonial-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active{width:20px;background:linear-gradient(137.84deg,#ffdb6e 26.31%,#ffbc5e 93.75%);transition:all .2s linear;border-radius:7px}
 .main .box-outer .client .heading{font-size:18px;font-weight:600;margin-bottom:8px;color:#fcfcfc;padding:16px 0 20px}
 .main .box-outer .client .client-item .owl-item{text-align:center}
 .main .box-outer .client .client-item .owl-item a{width:160px}
@@ -52,7 +51,7 @@ body{background-color:#121212!important;color:#fff!important;font-family:Poppins
 .main .box-outer .client .client-item .owl-item a:hover img{filter:grayscale(0)}
 .main .box-outer .client .client-item .owl-theme .owl-dots .owl-dot.active span{width:20px;background:linear-gradient(137.84deg,#ffdb6e 26.31%,#ffbc5e 93.75%);transition:all .2s linear}
 .main .box-outer .client .client-item .owl-theme .owl-dots .owl-dot span{margin:0 5px;background-color:#2a2a2b}
-.main .box-outer .education .book-icon{box-shadow:-.7px -.7px 2px rgba(2,2,2,.493),-.5px -.5px 2px rgba(255,255,255,.288),.7px .7px 2px rgba(0,0,0,.75);border-radius:12px;width:47px;height:47px;margin-right:20px; display: flex; align-items: center; justify-content: center;}
+.main .box-outer .education .book-icon{box-shadow:-.7px -.7px 2px rgba(2,2,2,.493),-.5px -.5px 2px rgba(255,255,255,.288),.7px .7px 2px rgba(0,0,0,.75);border-radius:12px;width:47px;height:47px;margin-right:20px;display:flex;align-items:center;justify-content:center}
 .main .box-outer .education .book-icon i{height:100%;width:100%;display:flex;justify-content:center;align-items:center;font-weight:400;color:#ffdb6e}
 .main .box-outer .education h3{font-size:25px;font-weight:600;margin-bottom:8px;color:#fcfcfc}
 .main .box-outer .timeline{margin-top:29px;padding-left:24px;position:relative}
