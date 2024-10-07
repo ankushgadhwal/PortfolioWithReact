@@ -1,4 +1,5 @@
 import AboutDoCard from "../components/AboutDoCard";
+import "./About.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";

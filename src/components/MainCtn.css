@@ -1,0 +1,23 @@
+.main .box-outer{padding:30px 30px 75px 30px;position:relative;width:100%;border:1px solid rgba(153,153,153,.253);box-shadow:5px 5px 10px rgba(0,0,0,.4),-5px -5px 10px rgba(0,0,0,.4);border-radius:20px;background-color:#1e1e1f}
+.main .box-outer .navbar ul li a{color:#d6d6d6;padding:0;margin-right:44px;font-weight:400;transition:all .3s ease-in-out;letter-spacing:.5px;padding:18px 10px;font-size:15px}
+.main .box-outer .navbar ul li:last-child a{margin-right:0}
+.main .box-outer .navbar ul li:hover a{color:#ffdb6e}
+
+@media (min-width:576px){
+.main .box-outer .navbar{justify-content:center;border:1px solid rgba(153,153,153,.253);border-top-right-radius:20px;border-top-left-radius:20px;border-bottom:1px solid #4444449c;position:fixed;top:calc(100% - 59px);left:0;right:0;z-index:99;background-color:rgba(43,43,44,.75);backdrop-filter:blur(3px);padding:0}
+.main .box-outer .navbar a{margin-right:32px!important;font-size:14px!important}
+}
+
+@media (min-width:768px){
+.main .box-outer .navbar a{margin-right:32px!important;font-size:15px!important}
+}
+
+@media (min-width:992px){
+.main .box-outer .navbar{padding:0 38px;border:1px solid rgba(153,153,153,.2);border-top-right-radius:20px;border-top-left-radius:0;border-bottom-left-radius:20px;position:absolute;right:0;top:0;left:initial;background-color:var(--bg-clr-surface-2)}
+}
+
+@media (max-width:575px){
+.main .box-outer{padding:15px}
+.main .box-outer .navbar{justify-content:center;border-top-right-radius:15px;border-top-left-radius:15px;border:1px solid rgba(153,153,153,.253);position:fixed;top:calc(100% - 49px);left:0;right:0;z-index:99;background-color:rgba(43,43,44,.75);backdrop-filter:blur(3px);box-shadow:0 16px 30px 10px rgba(0,0,0,.25);padding:0}
+.main .box-outer .navbar a{margin-right:20px!important;font-size:11px!important;padding:15px 10px!important}
+}

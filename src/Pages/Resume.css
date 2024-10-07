@@ -1,0 +1,33 @@
+.main .box-outer .education .book-icon{box-shadow:-.7px -.7px 2px rgba(2,2,2,.493),-.5px -.5px 2px rgba(255,255,255,.288),.7px .7px 2px rgba(0,0,0,.75);border-radius:12px;width:47px;height:47px;margin-right:20px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.main .box-outer .education .book-icon i{height:100%;width:100%;display:flex;justify-content:center;align-items:center;font-weight:400;color:#ffdb6e}
+.main .box-outer .education h3{font-size:25px;font-weight:600;margin-bottom:8px;color:#fcfcfc}
+.main .box-outer .timeline{margin-top:29px;padding-left:24px;position:relative}
+.main .box-outer .timeline::before{content:"";width:1px;height:28px;background:#ffbc5e69;position:absolute;top:-28px;left:24px}
+.main .box-outer .timeline .timeline-item{padding-left:40px;padding-bottom:9px;position:relative;border-left:1px solid #ffbc5e69}
+.main .box-outer .timeline .timeline-item:last-child{border-left:none}
+.main .box-outer .timeline .timeline-item::before{content:"";width:11px;height:11px;background:linear-gradient(137.84deg,#ffdb6e 26.31%,#ffbc5e 93.75%);border-radius:50%;position:absolute;left:-6px;top:4.5px;box-shadow:0 0 0 3px #ffdb6e2d}
+.main .box-outer .timeline .timeline-item h3{font-size:16px;color:#fcfcfc;margin-bottom:8px}
+.main .box-outer .timeline .timeline-item a,.main .box-outer .timeline .timeline-item span{font-size:15px;color:#ffbc5e;font-weight:300}
+.main .box-outer .timeline .timeline-item .skill-list,.main .box-outer .timeline .timeline-item p{font-size:15px;color:#d6d6d6;font-weight:300;margin-bottom:0;margin:4px 0 16px}
+.main .box-outer .timeline .timeline-item .skill-list{display:flex;list-style-type:disc;flex-wrap:wrap;gap:5px 35px}
+.main .box-outer .skill-title{font-size:24px;margin:16px 0 20px}
+.main .box-outer .skill-box{padding:30px;background:linear-gradient(#1e1e1f,#1e1e1f) padding-box,linear-gradient(110deg,rgba(153,153,153,.253),rgba(153,153,153,.103),rgba(153,153,153,.021)) border-box;border-radius:20px;box-shadow:5px 5px 10px rgba(0,0,0,.445);border-width:1px;border-style:solid;border-color:transparent}
+.main .box-outer .skill-box .progress-title span{margin-bottom:8px;display:inline-block}
+.main .box-outer .skill-box .progress-title:last-child .progress{margin-bottom:0}
+.main .box-outer .skill-box .progress{margin-bottom:24px;height:8px;background:#383838}
+.main .box-outer .skill-box .progress .progress-bar{background:linear-gradient(137.84deg,#ffdb6e 26.31%,#ffbc5e 93.75%);border-radius:10px}
+
+@media (max-width:575px){
+.main .box-outer .education .book-icon{margin-right:16px;width:28px;height:28px;border-radius:7px}
+.main .box-outer .education .book-icon i{font-size:14px}
+.main .box-outer .education h3{font-size:18px}
+.main .box-outer .timeline::before{left:14px;top:-20px;height:20px}
+.main .box-outer .timeline{padding-left:14px;margin-top:20px}
+.main .box-outer .timeline .timeline-item h3{font-size:13px;font-weight:400}
+.main .box-outer .timeline .timeline-item span{font-size:14px}
+.main .box-outer .timeline .timeline-item p{font-size:14px}
+.main .box-outer .skill-title{font-size:18px}
+.main .box-outer .skill-box{padding:20px;border-radius:12px}
+.main .box-outer .skill-box .progress-title span{font-size:13px}
+.main .box-outer .skill-box .progress{margin-bottom:16px}
+}

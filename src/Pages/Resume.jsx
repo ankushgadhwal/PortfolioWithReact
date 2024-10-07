@@ -1,5 +1,5 @@
 import { Book, Briefcase } from "react-bootstrap-icons";
-
+import "./Resume.css";
 function Resume() {
   return (
     <>

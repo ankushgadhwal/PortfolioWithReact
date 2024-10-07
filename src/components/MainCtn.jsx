@@ -1,5 +1,6 @@
 import { Children } from "react";
 import { Link } from "react-router-dom";
+import "./MainCtn.css"
 
 // eslint-disable-next-line react/prop-types
 const MainCtn = ({ children }) => {

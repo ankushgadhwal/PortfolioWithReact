@@ -1,3 +1,4 @@
+import "./Portfolio.css";
 import fullstackImg from "../assets/wonderlust.jpg";
 import javascriptImg from "../assets/javascript.jpg";
 import seoImg from "../assets/seo.png";
@@ -7,6 +8,7 @@ import portfolioImg from "../assets/portfolio-project.jpg";
 import portfolioImg2 from "../assets/portfolio.jpg";
 import sandboxImg from "../assets/sandbox-css3.jpg";
 import titanaImg from "../assets/sass- project.png";
+
 
 function Portfolio() {
   
