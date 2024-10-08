@@ -1,5 +1,4 @@
 function AboutDoCard({ card }) {
-  console.log(card);
 
   return (
     <>

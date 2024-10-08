@@ -19,5 +19,9 @@
 @media (max-width:575px){
 .main .box-outer{padding:15px}
 .main .box-outer .navbar{justify-content:center;border-top-right-radius:15px;border-top-left-radius:15px;border:1px solid rgba(153,153,153,.253);position:fixed;top:calc(100% - 49px);left:0;right:0;z-index:99;background-color:rgba(43,43,44,.75);backdrop-filter:blur(3px);box-shadow:0 16px 30px 10px rgba(0,0,0,.25);padding:0}
-.main .box-outer .navbar a{margin-right:20px!important;font-size:11px!important;padding:15px 10px!important}
+.main .box-outer .navbar ul li a{margin-right:20px;font-size:11px;padding:15px 10px}
+}
+
+@media (max-width:350px){
+.main .box-outer .navbar ul li a{padding: 15px 10px; margin-right: 0;}
 }

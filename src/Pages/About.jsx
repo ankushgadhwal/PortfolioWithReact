@@ -94,14 +94,20 @@ function About() {
         <div className="testimonial-item">
           <div className="owl-carousel owl-theme testimonial-carousel">
             <Swiper
-              slidesPerView={2}
+              className="mySwiper"
+              slidesPerView={1}
               spaceBetween={30}
               pagination={{
                 clickable: true,
                 className: "owl-dots",
               }}
               modules={[Pagination]}
-              className="mySwiper"
+              breakpoints={{
+                991: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+              }}
             >
               <SwiperSlide>
                 <div className="item">
@@ -202,7 +208,7 @@ function About() {
         <div className="client-item">
           <div className="owl-carousel owl-theme client-carousel">
             <Swiper
-              slidesPerView={4}
+              slidesPerView={1}
               spaceBetween={30}
               pagination={{
                 clickable: true,
@@ -210,6 +216,20 @@ function About() {
               }}
               modules={[Pagination]}
               className="mySwiper"
+              breakpoints={{
+                1200: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                991: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },                
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+              }}
             >
               <SwiperSlide>
                 <div className="item">

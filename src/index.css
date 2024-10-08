@@ -3,6 +3,7 @@
 ul{list-style:none}
 a{text-decoration:none;display:inline-block}
 ::selection{color:#ffdb6e}
+::placeholder{color:#ffdb6e !important}
 .active{display:inline-block!important}
 .yellowtext{color:#ffbc5e!important}
 :root{--bg-clr:#121212;--bg-clr-surface-1:#1e1e1f;--bg-clr-surface-2:#2a2a2b;--bg-clr-surface-3:linear-gradient(135deg, rgba(64, 64, 64, 0.13) 20%, rgba(64, 64, 64, 0.1) 48.44%);--text-clr2:#d6d6d6;--heading-clr:#fcfcfc;--accent-clr:#FFDB6E;--gradient-clr:linear-gradient(137.84deg, #FFDB6E 26.31%, #FFBC5E 93.75%)}

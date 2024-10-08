@@ -4,11 +4,18 @@ import {
   ChevronDown,
   Envelope,
   GeoAlt,
+  Github,
+  Linkedin,
   Phone,
 } from "react-bootstrap-icons";
 import profileImg from "../assets/avatar.png";
+import { useState } from "react";
 
 const Sidebar = () => {
+  const [showContacts, setShowContacts] = useState(false);
+  const contactHandler = () => {
+    setShowContacts((prev) => !prev);
+  };
   return (
     <div className="col-xl-3 col-lg-12">
       <aside>
@@ -23,13 +30,13 @@ const Sidebar = () => {
               <div className="badge">Frontend Developer</div>
             </div>
 
-            <button className="contact-btn">
+            <button className="contact-btn" onClick={contactHandler}>
               <span>Show Contacts</span>
               <ChevronDown color="#FFDB6E" />
             </button>
           </div>
 
-          <div className="sidebar-details">
+          <div className={`sidebar-details${showContacts ? " active" : ""}`}>
             <div className="divider"></div>
 
             <div className="sidebar-details-info">
@@ -87,7 +94,13 @@ const Sidebar = () => {
               <ul className="d-flex justify-content-xl-center justify-content-lg-start mb-0">
                 <li>
                   <a href="https://www.linkedin.com/in/ankush-gadhwal-04738916a/">
-                    <i className="bi bi-linkedin"></i>
+                    {/* <i className="bi bi-linkedin"></i> */}
+                    <Linkedin color="#FFDB6E" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/ankushgadhwal?tab=repositories">
+                    <Github color="#FFDB6E" />
                   </a>
                 </li>
               </ul>

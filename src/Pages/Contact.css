@@ -4,6 +4,7 @@
 .main .box-outer .contact-form h2{font-size:25px}
 .main .box-outer form input,.main .box-outer form textarea{padding:14px 22px 13px;border-radius:13px;background-color:transparent;border-color:rgba(153,153,153,.253);font-size:16px;color:#d6d6d6}
 .main .box-outer form input:focus,.main .box-outer form textarea:focus{box-shadow:none;border-color:#ffdb6e}
+.main .box-outer form{display: flex; flex-direction: column; gap: 10px;}
 .main .box-outer form textarea{resize:none}
 .main .box-outer form textarea:focus-visible{outline:0}
 .main .box-outer form button{padding:16px 24px;background-color:transparent;color:#ffdb6e;vertical-align:middle;border:none;box-shadow:-.7px -.7px 2px rgba(2,2,2,.493),-.5px -.5px 2px rgba(255,255,255,.288),.7px .7px 2px rgba(0,0,0,.75);border-radius:12px}
@@ -12,10 +13,10 @@
 .form-control.is-invalid,.was-validated .form-control:invalid{background-image:none!important;border-color:#b84c4c!important}
 .form-control:invalid:focus{box-shadow:none!important}
 .form-control.is-valid,.was-validated .form-control:valid{border-color:rgba(153,153,153,.253)!important;box-shadow:none!important;background-image:none!important}
-.invalid-feedback{margin-left:10px;font-size:13px!important;color:#b84c4c!important}
+.form-error{margin-left:10px;font-size:13px!important;color:#b84c4c!important; position: absolute;bottom: 0;}
 
 @media (min-width:576px){
-.main .box-outer form input:first-child{margin-bottom:27px}
+/* .main .box-outer form .position-relative:first-child{margin-bottom:27px} */
 .main .box-outer form button{float:initial!important;width:100%;font-size:14px;padding:12px 18px;margin-bottom:20px}
 }
 
@@ -23,9 +24,14 @@
 .main .box-outer form button{width:initial;font-size:14px;padding:12px 18px;margin-bottom:0}
 }
 
+@media (max-width:767px){
+    .main .box-outer form .user-info{gap: 15px; display: flex; flex-direction: column;}
+}
+
 @media (max-width:575px){
 .main .box-outer form input{padding:13px 22px 12px;font-size:14px;font-weight:450}
 .main .box-outer form textarea{font-size:14px;font-weight:450}
-.main .box-outer form input:first-child{margin-bottom:27px}
+/* .main .box-outer form input:first-child{margin-bottom:27px} */
+.main .box-outer form{gap: 15px;}
 .main .box-outer form button{float:initial!important;width:100%;font-size:14px;padding:12px 18px;margin-bottom:16px}
 }

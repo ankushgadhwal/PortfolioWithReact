@@ -1,5 +1,64 @@
+import { useState } from "react";
 import "./Contact.css";
+
 function Contact() {
+  const [errors, setErrors] = useState({});
+
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {};
+
+    if (!formData.fullname) {
+      newErrors.fullname = "name is required";
+      isValid = false;
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    }
+    if (formData.email) {
+      const emailCond =
+        "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
+      if (!formData.email.match(emailCond)) {
+        newErrors.email = "Please enter valid email address";
+        isValid = false;
+      }
+    }
+
+    if (!formData.message) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  function submitForm(e) {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log("Form submitted");
+    } else {
+      console.log("form not submit");      
+    }
+  }
+
   return (
     <>
       <div className="page-heading">
@@ -13,7 +72,7 @@ function Contact() {
           width="600"
           height="450"
           style={{ border: "0" }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -23,40 +82,55 @@ function Contact() {
         <h2>Contact Form</h2>
       </div>
 
-      <form className="needs-validation" noValidate>
-        <div className="d-block d-md-flex mb-4">
-          <div className="w-100 me-md-2">
+      <form className="needs-validation" noValidate onSubmit={submitForm}>
+        <div className="d-md-flex user-info">
+          <div className="w-100 pb-4 me-md-2 position-relative">
             <input
               type="text"
               className="form-control"
               placeholder="Full name"
-              required
+              
+              name="fullname"
+              id="fullname"
+              value={formData.fullname}
+              onChange={handleInputChange}
             />
-            <div className="invalid-feedback">Fill in the field</div>
+            {errors.fullname && (
+              <div className="form-error">Fill in the field</div>
+            )}
           </div>
-          <div className="w-100 ms-md-2">
+          <div className="w-100 ms-md-2 pb-4 position-relative">
             <input
               type="email"
               className="form-control"
-              id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Email address"
-              required
+              
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleInputChange}
             />
-            <div className="invalid-feedback">Email is incorrect</div>
+            {errors.email && (
+              <div className="form-error">Email is incorrect</div>
+            )}
           </div>
         </div>
 
-        <div className="mb-4">
+        <div className="pb-4 position-relative">
           <textarea
             className="form-control w-100"
             name="message"
-            id=""
+            id="message"
             rows="4"
             placeholder="Your message"
-            required
+            
+            value={formData.message}
+            onChange={handleInputChange}
           ></textarea>
-          <div className="invalid-feedback">Fill in the field</div>
+          {errors.message && (
+            <div className="form-error">Fill in the field</div>
+          )}
         </div>
 
         <div className="d-md-flex justify-content-md-end ">

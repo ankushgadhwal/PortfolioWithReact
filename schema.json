@@ -1,44 +1,65 @@
-{
-  "body": [
-    {
-      "link": "https://wanderlust-1j0e.onrender.com/listings",
-      "title": "Wonderlust",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://forkify-ankush.netlify.app/",
-      "title": "Forkify",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://titana.pages.dev/",
-      "title": "Titana",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://seobyankush.netlify.app/",
-      "title": "SEO / Digital Marketing",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://pofo-by-ankush.000webhostapp.com/",
-      "title": "POFO",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://sandbox-by-ankush.pages.dev/",
-      "title": "Sandbox",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://canvas-car.netlify.app/",
-      "title": "Canvas",
-      "description": "Web Design"
-    },
-    {
-      "link": "https://portfolio-gp0.pages.dev/portfolio",
-      "title": "Portfolio",
-      "description": "Web Design"
-    }
-  ]
-}
+[
+  {
+    "link": "https://wanderlust-1j0e.onrender.com/listings",
+    "title": "Wonderlust",
+    "description": "Fullstack",
+    "imageName": "wonderlust",
+    "languages": "html, css, bootstrap, mediaQuery, fullstack, express, node, mongodb, all"
+  },
+  {
+    "link": "https://forkify-ankush.netlify.app/",
+    "title": "Forkify",
+    "description": "Javascript",
+    "imageName": "forkify",
+    "languages": "html, css, javascript, all"
+  },
+  {
+    "link": "https://titana.pages.dev/",
+    "title": "Titana",
+    "description": "Animation",
+    "imageName": "titana",
+    "languages": "html, css, sass, all"
+  },
+  {
+    "link": "https://seobyankush.netlify.app/",
+    "title": "SEO / Digital Marketing",
+    "description": "Build from scratch",
+    "imageName": "seoWeb",
+    "languages": "html, css, sass, bootstrap, mediaQuery, all"
+  },
+  {
+    "link": "https://pofo-by-ankush.000webhostapp.com/",
+    "title": "POFO",
+    "description": "Responsive Web Design",
+    "imageName": "pofoWeb",
+    "languages": "html, css, mediaQuery, all"
+  },
+  {
+    "link": "https://sandbox-by-ankush.pages.dev/",
+    "title": "Sandbox",
+    "description": "Web Design",
+    "imageName": "sandbox",
+    "languages": "html, css, all"
+  },
+  {
+    "link": "https://canvas-car.netlify.app/",
+    "title": "Canvas",
+    "description": "Web Design",
+    "imageName": "canvas",
+    "languages": "html, css, all"
+  },
+  {
+    "link": "https://portfolio-gp0.pages.dev/portfolio",
+    "title": "Portfolio",
+    "description": "Responsive Web Design",
+    "imageName": "portfolio1",
+    "languages": "html, css, bootstrap, mediaQuery, all"
+  },
+  {
+    "link": "https://portfolio-gp0.pages.dev/portfolio",
+    "title": "Portfolio",
+    "description": "React Portfolio Design",
+    "imageName": "portfolio2",
+    "languages": "html, css, bootstrap, mediaQuery, react, all"
+  }
+]
