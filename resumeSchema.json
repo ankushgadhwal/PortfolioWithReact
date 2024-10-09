@@ -1,0 +1,50 @@
+{
+  "certificates": [
+    {
+      "title": "I completed Full Stack Web Development from Apnacollege.",
+      "certificateUrl": "https://www.apnacollege.in/certificate_v2/66b4d31180c9fe2a87035972/user/6575fe50594e365b8d0b1035",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Git",
+        "GitHub",
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "MySQL",
+        "MongoDB",
+        "React.js",
+        "Tailwind CSS",
+        "Redux & Redux Toolkit"
+      ]
+    },
+    {
+      "title": "I completed Data Structures & Algorithms with Java from Apnacollege.",
+      "certificateUrl": "https://www.apnacollege.in/certificate_v2/662f9454b676a6f0bf0547cb/user/6575fe50594e365b8d0b1035",
+      "skills": ["DSA"]
+    },
+    {
+      "title": "I completed The Complete JavaScript Course 2024: From Zero to Expert! from Udemy.",
+      "certificateUrl": "https://www.udemy.com/certificate/UC-f743409e-b863-40e9-ac48-16370d755fa5/",
+      "skills": ["JavaScript"]
+    },
+    {
+      "title": "I completed React - The Complete Guide 2024 (incl. React Router & Redux) from Udemy.",
+      "certificateUrl": "https://www.udemy.com/certificate/UC-1a46d1de-3532-474d-a290-9dbab32d94e0/",
+      "skills": ["React.js"]
+    },
+    {
+      "title": "I completed a Front-end Coding Course at Red & White Multimedia Education, Surat.",
+      "certificateUrl": "https://www.rnwmultimedia.edu.in/",
+      "skills": ["HTML", "CSS", "Jquery", "Bootstrap", "Tailwind CSS"]
+    }
+  ],
+  "skills": [
+    { "title": "HTML 80%", "rating": "80%" },
+    { "title": "CSS 80%", "rating": "80%" },
+    { "title": "JavaScript 70%", "rating": "70%" },
+    { "title": "React.js 75%", "rating": "75%" },
+    { "title": "Angular.js 60%", "rating": "60%" }
+  ]
+}

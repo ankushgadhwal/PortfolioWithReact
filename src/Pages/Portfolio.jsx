@@ -1,5 +1,5 @@
 import "./Portfolio.css";
-import projectData from "../../schema.json";
+import projectData from "../../portfolioSchema.json";
 import { useState } from "react";
 import Btn from "../components/Btn";
 
@@ -111,6 +111,7 @@ function Portfolio() {
           ))}
         </div>
       </div>
+      
     </>
   );
 }
