@@ -1,9 +1,9 @@
+/* eslint-disable no-useless-escape */
 import { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
   const [errors, setErrors] = useState({});
-
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
@@ -34,8 +34,8 @@ function Contact() {
     }
     if (formData.email) {
       const emailCond =
-        "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
-      if (!formData.email.match(emailCond)) {
+        /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+      if (!formData.email.toLowerCase().trim().match(emailCond)) {
         newErrors.email = "Please enter valid email address";
         isValid = false;
       }
@@ -55,7 +55,7 @@ function Contact() {
     if (validateForm()) {
       console.log("Form submitted");
     } else {
-      console.log("form not submit");      
+      console.log("form not submit");
     }
   }
 
@@ -89,14 +89,13 @@ function Contact() {
               type="text"
               className="form-control"
               placeholder="Full name"
-              
               name="fullname"
               id="fullname"
               value={formData.fullname}
               onChange={handleInputChange}
             />
             {errors.fullname && (
-              <div className="form-error">Fill in the field</div>
+              <div className="form-error">{errors.fullname}</div>
             )}
           </div>
           <div className="w-100 ms-md-2 pb-4 position-relative">
@@ -105,15 +104,12 @@ function Contact() {
               className="form-control"
               aria-describedby="emailHelp"
               placeholder="Email address"
-              
               name="email"
               id="email"
               value={formData.email}
               onChange={handleInputChange}
             />
-            {errors.email && (
-              <div className="form-error">Email is incorrect</div>
-            )}
+            {errors.email && <div className="form-error">{errors.email}</div>}
           </div>
         </div>
 
@@ -124,13 +120,10 @@ function Contact() {
             id="message"
             rows="4"
             placeholder="Your message"
-            
             value={formData.message}
             onChange={handleInputChange}
           ></textarea>
-          {errors.message && (
-            <div className="form-error">Fill in the field</div>
-          )}
+          {errors.message && <div className="form-error">{errors.message}</div>}
         </div>
 
         <div className="d-md-flex justify-content-md-end ">

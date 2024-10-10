@@ -8,7 +8,7 @@ import {
   Linkedin,
   Phone,
 } from "react-bootstrap-icons";
-import profileImg from "../assets/avatar.png";
+import profileImg from "../../public/images/avatar.png";
 import { useState } from "react";
 
 const Sidebar = () => {

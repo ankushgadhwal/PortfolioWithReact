@@ -5,7 +5,7 @@ function AboutDoCard({ card }) {
       <div className="col-sm-12 col-lg-6">
         <div className="item-inner d-flex">
           <div className="inner-img me-3">
-            <img src={`/src/assets/${card.img}.svg`} alt={card.title} />
+            <img src={`./images/${card.img}.svg`} alt={card.title} />
           </div>
           <div className="inner-content">
             <h3>{card.title}</h3>

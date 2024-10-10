@@ -4,7 +4,7 @@ function ClientCard({ client }) {
   return (
     <div className="item">
       <a href="#">
-        <img src={`/src/assets/${client}.png`} alt={client} width="100%" />
+        <img src={`./images/${client}.png`} alt={client} width="100%" />
       </a>
     </div>
   );

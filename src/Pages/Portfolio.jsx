@@ -2,6 +2,7 @@ import "./Portfolio.css";
 import projectData from "../../portfolioSchema.json";
 import { useState } from "react";
 import Btn from "../components/Btn";
+import PortfolioCard from "../components/portfolio/PortfolioCard";
 
 function Portfolio() {
   const [projects, setProjects] = useState(projectData);
@@ -76,14 +77,14 @@ function Portfolio() {
             project={"sass"}
             activeTab={activeTab}
           >
-            SASS
+            Sass
           </Btn>
           <Btn
             onClick={(e, kind) => handleClick(e, kind)}
             project={"bootstrap"}
             activeTab={activeTab}
           >
-            BOOTSTRAP
+            Bootstrap
           </Btn>
           <Btn
             onClick={(e, kind) => handleClick(e, kind)}
@@ -96,22 +97,10 @@ function Portfolio() {
 
         <div className="photo-gallery">
           {projects?.map((project, idx) => (
-            <div className="pic" key={idx}>
-              <a href={project.link}>
-                <img
-                  src={`/src/assets/${project.imageName}.jpeg`}
-                  alt={project.imageName}
-                />
-              </a>
-              <div className="img-caption">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-            </div>
+            <PortfolioCard project={project} key={idx} />
           ))}
         </div>
       </div>
-      
     </>
   );
 }
