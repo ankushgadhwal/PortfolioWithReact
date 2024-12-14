@@ -1,5 +1,5 @@
 .main .box-outer .about-content h2{margin:20px 0;font-size:25px}
-.main .box-outer .about-content .about-item .card-wrapper{padding-bottom:20px;}
+.main .box-outer .about-content .about-item .card-wrapper{padding-bottom:20px; height: 100%;}
 .main .box-outer .about-content .about-item .item-inner{border-radius:20px;box-shadow:5px 5px 10px rgba(0,0,0,.445);padding:30px;width:100%;background-color:#202021;position:relative;z-index:9;background:linear-gradient(#1e1e1f,#1e1e1f) padding-box,linear-gradient(110deg,rgba(153,153,153,.253),rgba(153,153,153,.103),rgba(153,153,153,.021)) border-box;border-width:1px;border-style:solid;border-color:transparent}
 .main .box-outer .about-content .about-item .item-inner .inner-content h3{font-size:18px;font-weight:600;margin-bottom:8px;color:#fcfcfc}
 .main .box-outer .about-content .about-item .item-inner .inner-content p{margin-bottom:0;color:#fcfcfc;opacity:.7;font-weight:300;font-size:15px}
